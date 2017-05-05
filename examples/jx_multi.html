@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<script type="text/javascript">
+	var startTime = new Date().getTime();
+	var winlatency = 0;
+	var imglatency = 0;
+	function imageonload() {
+		var endtime = new Date().getTime();
+		imglatency = endtime - startTime;
+		console.log("----------------");
+		console.log('imageonload');
+		console.log(imglatency);
+	}
+
+	window.onload = function() {
+		var endtime = new Date().getTime();
+		winlatency = endtime - startTime;
+		console.log("----------------");
+		console.log("winlatency");
+		console.log(winlatency);
+	}
+	</script>
+<style type="text/css">
+		#RMF_previewTable {
+			border-collapse: collapse; width: 100%;
+			margin-left: 0px;
+			margin-top: 0px;
+			margin-right: 0px;
+			margin-bottom: 0px;
+			background-color:#FFFFFF;
+		}
+		#RMF_previewTable TD{
+			vertical-align: top;
+			border: 1px solid gray; font-size: 9pt;
+			font-family: Arial, Verdana, Helvetica, sans-serif;
+			font-size:11px;
+			color:#000000;
+		}
+	</style>
+
+</head>
+
+<body>
+	<table id="RMF_previewTable">
+		<tbody><tr>
+			<td colspan="2">Sample Page Layout applied XHTML 1.0 Transitional</td>
+		</tr>
+
+<tr>
+	<td style="height:300px;width:30%">Content Area</td>
+	<td style="width:70%">ad x01  display<br>
+		<script type="text/javascript">
+        var url = 'http://oasc-training7.247realmedia.com//RealMedia/ads/adstream_jx.ads/demo-ads.com/1874360502@x01?';
+		    document.write('<scr' + 'ipt type="text/javascript" src="' + url + '"></scr' + 'ipt>');
+		</script>
+	</td>
+</tr>
+
+
+
+<tr>
+	<td style="height:300px;width:30%">Content Area</td>
+	<td style="width:70%">ad x02  display<br>
+		<script type="text/javascript">
+    var url = 'http://oasc-training7.247realmedia.com//RealMedia/ads/adstream_jx.ads/demo-ads.com/11360502@x02?';
+    document.write('<scr' + 'ipt type="text/javascript" src="' + url + '"></scr' + 'ipt>');
+		</script>
+	</td>
+</tr>
+<tr>
+	<td colspan="2">
+		<img src="/examples/images/nyc-medium.jpg" alt="" onload="imageonload();">
+		<!--<img src="http://media.architecturaldigest.com/photos/5699802bc6772b7614567435/2:1/w_3200/new-york-city-guide.jpg" alt="">-->
+	</td>
+</tr>
+
+	</tbody></table>
+</body>
+
+</html>

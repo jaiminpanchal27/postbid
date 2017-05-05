@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Temper</title>
+<script type="text/javascript">
+var startTime = new Date().getTime();
+window.onload = function() {
+	var endtime = new Date().getTime();
+	var latency = endtime - startTime;
+	console.log("----------------");
+	console.log(latency);
+}
+</script>
+<style type="text/css">
+		#RMF_previewTable {
+			border-collapse: collapse; width: 100%;
+			margin-left: 0px;
+			margin-top: 0px;
+			margin-right: 0px;
+			margin-bottom: 0px;
+			background-color:#FFFFFF;
+		}
+		#RMF_previewTable TD{
+			vertical-align: top;
+			border: 1px solid gray; font-size: 9pt;
+			font-family: Arial, Verdana, Helvetica, sans-serif;
+			font-size:11px;
+			color:#000000;
+		}
+	</style>
+</head>
+
+<body>
+
+
+<!-- Start OAS DX Tag Snippet -->
+<script type="text/javascript">
+var oas_tag = {};
+oas_tag.loadAd = oas_tag.loadAd || function(){};
+oas_tag.url = 'oasc-training7.247realmedia.com/';  //Define OAS URL
+oas_tag.sizes = function () { oas_tag.definePos('x01', [300, 250]) };;
+oas_tag.site_page = 'demo-ads.com';  //Define OAS Site page
+////////////////// Optional Paramaters below  //////////////////////////
+oas_tag.query = ''; //Define Keywords
+oas_tag.taxonomy = '';  //Define custom reporting taxonomy
+oas_tag.analytics = true;        //Collect referal values & custom taxonomy if true
+oas_tag.lazyload = false;        //Load the script after the browser's onload event fires
+oas_tag.enableRTB = false;		 //Enable RTB response. Will change delivery to count on decision behavior
+//////////////////End Optional Paramaters  //////////////////////////
+oas_tag.logging = false;
+oas_tag.allowSizeOverride = false;
+
+// Make async call - do not modify //
+(function() {
+	oas_tag.version ='1';
+	var oas = document.createElement('script');
+	oas.type = 'text/javascript'; oas.async = true;
+	var protocol = 'https:' == document.location.protocol?'https://':'http://';
+	oas.src = protocol + oas_tag.url + '/om/' + oas_tag.version + '.js';
+	var node = document.getElementsByTagName('script')[0];
+	node.parentNode.insertBefore(oas, node);
+})();
+</script>
+<!-- End OAS DX Tag Snippet -->
+
+	<table id="RMF_previewTable">
+		<tbody><tr>
+			<td colspan="2">Sample Page Layout applied XHTML 1.0 Transitional</td>
+		</tr>
+
+
+<tr>
+	<td style="height:300px;width:30%">Content Area</td>
+	<td style="width:70%">ad x01  display<br>
+		<div id="oas_x01" style="width: 300px; height: 250px; display:block"></div>
+
+		<script type="text/javascript">oas_tag.loadAd("x01");</script>
+
+
+	</td>
+</tr>
+
+<tr>
+	<td colspan="2">
+		<img src="/examples/images/nyc-medium.jpg" alt="">
+		<!--<img src="http://media.architecturaldigest.com/photos/5699802bc6772b7614567435/2:1/w_3200/new-york-city-guide.jpg" alt="">-->
+	</td>
+</tr>
+
+	</tbody></table>
+</body>
+</html>
